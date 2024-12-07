@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toten de Pedidos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <a href="{{url_for('index')}}">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+        </a>
+        <a class="menu_title">Escolha sua Porção!</a>
+        <div class="menu_item">
+            <a href="{{url_for('shopping_cart')}}">
+                <img src="{{url_for('static', filename='cart_icon.svg')}}" class="menu_item">
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="portion">
+            <img src="https://placehold.co/300x200" alt="Porção 1">
+            <h3>Porção 1</h3>
+            <p>Descrição da porção 1. Deliciosa e irresistível!</p>
+            <button>Adicionar</button>
+        </div>
+        <div class="portion">
+            <img src="https://placehold.co/300x200" alt="Porção 2">
+            <h3>Porção 2</h3>
+            <p>Descrição da porção 2. Experimente já!</p>
+            <button>Adicionar</button>
+        </div>
+        <div class="portion">
+            <img src="https://placehold.co/300x200" alt="Porção 3">
+            <h3>Porção 3</h3>
+            <p>Descrição da porção 3. Uma explosão de sabores!</p>
+            <button>Adicionar</button>
+        </div>
+        <div class="portion">
+            <img src="https://placehold.co/300x200" alt="Porção 4">
+            <h3>Porção 4</h3>
+            <p>Descrição da porção 4. Não perca!</p>
+            <button>Adicionar</button>
+        </div>
+        <div class="portion">
+            <img src="https://placehold.co/300x200" alt="Porção 5">
+            <h3>Porção 5</h3>
+            <p>Descrição da porção 5. Delícia garantida!</p>
+            <button>Adicionar</button>
+        </div>
+        <div class="portion">
+            <img src="https://placehold.co/300x200" alt="Porção 6">
+            <h3>Porção 6</h3>
+            <p>Descrição da porção 6. Peça agora!</p>
+            <button>Adicionar</button>
+        </div>
+    </div>
+</body>
+</html>

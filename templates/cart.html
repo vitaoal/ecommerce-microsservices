@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <a href="{{url_for('index')}}">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+        </a>
+        <a class="menu_title">Carrinho</a>
+        <div class="menu_item">
+            <a href="{{url_for('shopping_cart')}}">
+                <img src="{{url_for('static', filename='cart_icon.svg')}}" class="menu_item">
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="portion">
+            <img src="https://placehold.co/300x200" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of product 1</p>
+            <button>Remover do carrinho</button>
+        </div>
+        <div class="portion">
+            <img src="https://placehold.co/300x200" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of product 2</p>
+            <button>Remover do carrinho</button>
+        </div>
+        <div class="cart-summary">
+            <h2>Resumo do Carrinho</h2>
+            <label for="observacoes">Observações</label>
+            <input type='text' id="observacoes">
+            <div class="total">
+                <p>Total: R$100,00</p>
+                <p>Frete: R$10,00</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
